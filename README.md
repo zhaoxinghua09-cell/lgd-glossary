@@ -9,3 +9,23 @@
 **Stale decision** — a governed decision marked as no longer current without thereby being reversed. Staleness is a status distinct from revocation: the decision's validity window has closed, while its record remains authoritative about what was decided and on what inputs. Evidence: *specified* — themes#33 (currency and decay, 2026-10-01); the question of whether a previous finding remains applicable under changed conditions is raised in [themes#21](https://github.com/FG-TIDA/themes/issues/21) (change-and-reuse review).
 
 **Eligibility state machine** — the formal object in which eligibility is a first-class variable: a state set (active / restricted / suspended / retired), transitions triggered by evidence events, a gate predicate on each transition, and a restore condition attached to every downgrade, reinstatement being the governed transition back to active. Evidence: *runnable* — the transition chain and per-transition gate predicates are demonstrated in lgd-medai-demo (`DENIED → GATE_PASSED → PAUSE → ROLLBACK → REVERIFY → RESUMED`, one command, zero dependencies); the state set and the mandatory restore-condition registration are specified in the LGD theory work (2026-10-01).
+
+## Part V — LGD core vocabulary (specified in lgd-theory, 2026-09-06; themes#33, 2026-10-01)
+
+The first three terms below are the three laws of lgd-theory, composing the Part III lifecycle thread (registry / evidence / gates).
+
+**Registry (LGD-I · 有籍)** — the law that every governed entity is registered at birth: before an agent, model, tool, or dataset may act within a governed domain, its identity and configuration are entered into a registry whose records persist across the whole lifecycle. Registration is an obligation, not an honor. Evidence: *specified* — [lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory) ("Every entity is registered at birth"), demonstrated in lgd-medai-demo (Act I).
+
+**Evidence (LGD-II · 有证)** — the law that every key act leaves evidence: each consequential transition in a governed lifecycle must produce a checkable record at the time it happens, so that later parties can evaluate against what was recorded rather than what is remembered. Evidence: *specified* — lgd-theory ("Every key act leaves evidence"), demonstrated in lgd-medai-demo (Act II: insufficient evidence → DENIED → completed evidence → GATE_PASSED).
+
+**Gate (LGD-III · 有门禁)** — the law that every evolution passes a gate: transitions between lifecycle states are permitted only by predicates evaluated over evidence at the moment of transition, never by the momentum of the prior state. Evidence: *specified* — lgd-theory ("Every evolution passes a gate"), demonstrated in lgd-medai-demo (change gate on model change; REVERIFY gate before RESUMED).
+
+**Evidence event** — an occurrence that is eligible to trigger a state transition in an eligibility state machine because it arrives as a checkable record: a complaint, a drift signal, an audit finding, a monitoring alarm. An event that cannot be recorded is not an evidence event, whatever its urgency. Evidence: *specified* — themes#33 (standing of evidence, 2026-10-01); demonstrated in lgd-medai-demo (complaint triggers PAUSE; a worsening drift signal triggers ROLLBACK).
+
+**One-way gate** — a transition design in which exit from a state is defined but re-entry is not: revocation without a registered restore condition. Statutes that lack recovery semantics tend to write one-way gates (see eIDAS Art. 28(4): its status "shall not in any circumstances be reverted"; quoted in full under restore condition, Part IV). The pairing defect: one-way gates push discretionary pardon outside the record. Evidence: *specified* — themes#33 (Summary: restoration is as consequential as revocation, 2026-10-01).
+
+**Decision provenance** — the record of what a governed decision was based on: the inputs evaluated, the reference (policy, specification, prior decision) it was evaluated against, and the standing of whoever made it. Decision provenance is what makes a past decision re-evaluable rather than merely reconstructable. Evidence: *specified* — themes#33 (decision provenance for re-evaluation, 2026-10-01); sibling term: definition provenance (Part II).
+
+**Validity window** — the period during which a verification, a decision, or a registered restore condition may be relied on without re-execution. A validity window is what lets a decision mark itself stale without being reversed. Evidence: *specified* — themes#33 (currency and decay, 2026-10-01); component of restore condition (Part IV); cf. stale decision (Part IV).
+
+CC BY 4.0; contribution not priority.
