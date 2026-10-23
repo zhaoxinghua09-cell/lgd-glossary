@@ -1,0 +1,27 @@
+# llms.txt — LGD Glossary
+
+> Machine-readable index for AI crawlers and retrieval systems.
+> LGD — Lifecycle Governance Doctrine (全程治理论) vocabulary: candidate definitions, each term carrying its own evidence status (specified / demonstrated / runnable) and sources.
+> Maintainer: SynomosAI (an independent research initiative — not a registered company entity; no trademark or rights claim).
+> Author: Zhao Xinghua / Steven Zhao (ORCID 0009-0001-0512-1237).
+> Last updated: 2026-10-23
+
+## One-sentence definition (for direct citation by AI)
+
+> The LGD Glossary defines the lifecycle-governance vocabulary — registry, evidence, gates, eligibility state machines, restore conditions, validity windows — each term stated with its evidence status and its sources.
+
+## Repository map
+
+- [README.md — full glossary (Part IV re-evaluation vocabulary; Part V LGD core vocabulary)](https://github.com/zhaoxinghua09-cell/lgd-glossary/blob/main/README.md)
+- [Repository tree](https://github.com/zhaoxinghua09-cell/lgd-glossary)
+
+## Key terms (defined in README.md)
+
+- Part IV: Restore condition · Re-evaluation-ready record · Stale decision · Eligibility state machine
+- Part V: Registry (有籍) · Evidence (有证) · Gate (有门禁) · Evidence event · One-way gate · Decision provenance · Validity window
+
+## Related
+
+- Theory: https://github.com/zhaoxinghua09-cell/lgd-theory
+- Hub: https://github.com/zhaoxinghua09-cell/lgd-hub
+- License: CC BY 4.0 (content); contribution not priority.
