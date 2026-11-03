@@ -1,4 +1,5 @@
 # LGD Glossary — Candidate Definitions for
+[![Trust Score](https://img.shields.io/badge/Trust%20Score-80%2F100%20A-2ea44f.svg)](https://github.com/zhaoxinghua09-cell/skillgate)
 
 ## Part IV — Re-evaluation vocabulary (specified in themes#33, 2026-10-01; demonstrated in lgd-medai-demo; *note: themes#33 was closed as wontfix on 2026-10-02 — the specifications below remain the authored definitions, cited as facts with their dates, not as live thread states*)
 
@@ -29,3 +30,12 @@ The first three terms below are the three laws of lgd-theory, composing the Part
 **Validity window** — the period during which a verification, a decision, or a registered restore condition may be relied on without re-execution. A validity window is what lets a decision mark itself stale without being reversed. Evidence: *specified* — themes#33 (currency and decay, 2026-10-01); component of restore condition (Part IV); cf. stale decision (Part IV).
 
 CC BY 4.0; contribution not priority.
+
+## Ecosystem / 生态闭环
+
+- [awesome-trusted-agents](https://github.com/zhaoxinghua09-cell/awesome-trusted-agents) — 四角度评分精选清单（生态榜单入口）
+- [skill-scorecard](https://github.com/zhaoxinghua09-cell/skill-scorecard) — 四角度评分引擎
+- [lgd-hub](https://github.com/zhaoxinghua09-cell/lgd-hub) — LGD 理论资产统一入口
+- [lgd-skill-marketplace](https://github.com/zhaoxinghua09-cell/lgd-skill-marketplace) — LGD 技能超市总目录
+- [governanceos](https://github.com/zhaoxinghua09-cell/governanceos) — 治理编排枢纽（SPEC→PLAN→GATE→AUDIT→EVO）
+- [skillgate](https://github.com/zhaoxinghua09-cell/skillgate) — 技能信任评分引擎
