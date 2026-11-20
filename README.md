@@ -95,3 +95,12 @@ CC BY 4.0; contribution not priority.
 ---
 
 *© 2026 Zhao Xinghua / Steven Zhao·China. Glossary text CC BY 4.0. Brands SynomosAI / MedXpert are unregistered names only (no entity or trademark filed). Pointed artifacts keep their own licenses (code MIT / Apache-2.0; catalog content all rights reserved; lgd-theory text all rights reserved, citation with attribution permitted).*
+## 三行读完这个仓 · Three lines
+
+1. **这是什么** — 面向 FG-TIDA 术语工作的**候选定义**集：每条带可核依据，供任何治理/信任词汇的协调工作取用。**这不是标准，也不是权威词典**；条目是可被和掉（harmonized away）的提案，不是主张首创。
+2. **一条命令**（本仓是纯文本，没有自己的脚本；绑定这些定义的那套检查在另一个仓）
+```bash
+git clone --depth 1 https://github.com/zhaoxinghua09-cell/uibc-core && cd uibc-core && python tools/external_node_check.py
+```
+末尾应是 `CONSISTENT` — 该判定要求两件同时成立：一份独立写成的第二实现与参考实现结论一致，**且**三个必须被拒的包（缺时区的时间戳、`1900-02-29`、大写 UUID）全部被拒。一个"什么都通过"的验器过不了这一关。它判的是验器行为；术语条目与验器的对应由 uibc-core 的 Profile 承载。
+3. **别人的回执在哪** — [uibc-core 的 EVIDENCE-INDEX](https://github.com/zhaoxinghua09-cell/uibc-core/blob/main/EVIDENCE-INDEX.md)：外部节点 **1** 份（具名运维者、异机、无特权、按 README 逐字跑），另有 7 份外部机器评审（标注为机器评审，不计作第三方）；**本仓自身没有外部回执，记 0**。
