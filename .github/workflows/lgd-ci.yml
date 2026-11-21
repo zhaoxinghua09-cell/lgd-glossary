@@ -1,7 +1,6 @@
 name: LGD CI
 
 # 单一真源：逻辑在 LGD-AI/lgd-ci，这里只做触发。
-# 安全要求：跨仓 reusable workflow 必须 pin 到完整 40 位 SHA（禁止 @main / @v1）。
 on:
   pull_request:
   push:
@@ -12,8 +11,8 @@ permissions:
 
 jobs:
   ci:
-    uses: LGD-AI/lgd-ci/.github/workflows/lgd-reusable-ci.yml@d8b7f76b6c446581e5b4206c83f20cd6155588f6
+    uses: LGD-AI/lgd-ci/.github/workflows/lgd-reusable-ci.yml@b893e1b54505a8c96e23839cff6b9a98859fbe04
     with:
       python-version: "3.11"
-      run-tests: false
-      require-skill-md: true
+      run-tests: true
+      require-skill-md: false
